@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">02.10.2024</string>
+    <string name="AppHeader">loginAppJS</string>
+    <string name="register">Rejestruj konto</string>
+    <string name="Email">Podaj e-mail:</string>
+    <string name="Password">Podaj hasło:</string>
+    <string name="PasswordRepeat">Powtórz hasło:</string>
+    <string name="Confirm">Zatwierdź</string>
+    <string name="Welcome">Witaj email@mail.com</string>
+    <string name="TempEmail">email@mail.com</string>
+    <string name="TempPassword">Haslo123</string>
+</resources>
