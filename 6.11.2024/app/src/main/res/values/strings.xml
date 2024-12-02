@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="textviewinput">Podaj tekst do wyświetlenia...</string>
+    <string name="textviewbutton">Wyświetl tekst</string>
+    <string name="textviewplaceholder">Tu wyświetli się tekst...</string>
+    <string name="toastplaceholder">podaj tekst do toasta...</string>
+    <string name="toastbutton">Wyświetl toast</string>
+</resources>
