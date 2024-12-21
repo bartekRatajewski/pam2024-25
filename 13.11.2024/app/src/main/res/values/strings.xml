@@ -5,12 +5,4 @@
     <string name="textviewplaceholder">Tu wyświetli się tekst...</string>
     <string name="toastplaceholder">podaj tekst do toasta...</string>
     <string name="toastbutton">Wyświetl toast</string>
-    <string name="Header">Formularz</string>
-    <string name="FName">imię</string>
-    <string name="LName">nazwisko</string>
-    <string name="DateOfBirth">data urodzenia</string>
-    <string name="Male">mężczyzna</string>
-    <string name="Female">kobieta</string>
-    <string name="Reset">Wyczyść</string>
-    <string name="Send">Wyślij</string>
 </resources>

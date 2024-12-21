@@ -28,6 +28,26 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        Button btn = findViewById(R.id.button2);
 
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText toastText = findViewById(R.id.edit2);
+
+                String textValue = toastText.getText().toString();
+
+                Toast.makeText(getApplicationContext(), textValue, Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+    public void InsertText(View view) {
+        EditText text = findViewById(R.id.edit1);
+
+        String textValue = text.getText().toString();
+
+        TextView output = findViewById(R.id.textView);
+
+        output.setText(textValue);
     }
 }
