@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">2025.01.08</string>
+    <string name="header">Wizyta u weterynarza</string>
+    <string name="name_and_lname_placeholder">Imię i nazwisko właściciela...</string>
+    <string name="age_label">Ile ma lat?</string>
+    <string name="purpose_placeholder">Cel wizyty</string>
+    <string name="time_placeholder">16:00</string>
+</resources>
