@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">s</string>
+    <string name="fname_label">Imię:</string>
+    <string name="empty" />
+    <string name="email_label">Adres e-mail:</string>
+    <string name="increase_value">Zwiększ liczbę</string>
+    <string name="clicks">Kliknąłeś przycisk 0 razy</string>
+</resources>
