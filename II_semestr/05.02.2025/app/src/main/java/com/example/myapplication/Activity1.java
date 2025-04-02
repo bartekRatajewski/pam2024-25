@@ -27,7 +27,6 @@ public class Activity1 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity1);
 
-        // Tworzenie kanałów powiadomień (API 26+)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
 
@@ -43,12 +42,11 @@ public class Activity1 extends AppCompatActivity {
             notificationManager.createNotificationChannel(lowPriorityChannel);
         }
 
-        // Obsługa przycisków
         Button button1 = findViewById(R.id.button1);
         Button button2 = findViewById(R.id.button2);
 
-        button1.setOnClickListener(v -> sendNotification(1)); // Wysokie powiadomienie
-        button2.setOnClickListener(v -> sendNotification(2)); // Niskie powiadomienie
+        button1.setOnClickListener(v -> sendNotification(1));
+        button2.setOnClickListener(v -> sendNotification(2));
     }
 
     @SuppressLint("MissingPermission")
@@ -63,34 +61,34 @@ public class Activity1 extends AppCompatActivity {
             intent.setAction(Intent.ACTION_MAIN);
             intent.addCategory(Intent.CATEGORY_LAUNCHER);
             intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // WAŻNE!
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             pendingIntent = PendingIntent.getActivity(
                     this, 0, intent,
                     PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
             );
             builder = new NotificationCompat.Builder(this, CHANNEL_ID_HIGH)
-                    .setContentTitle("High Priority")
+                    .setContentTitle("Wysoki priorytet")
                     .setContentText("Kliknij, aby przejść do Aktywności 2")
                     .setSmallIcon(android.R.drawable.ic_dialog_info)
                     .setContentIntent(pendingIntent)
-                    .setAutoCancel(true) // WAŻNE! Usuwa powiadomienie po kliknięciu
+                    .setAutoCancel(true)
                     .setPriority(NotificationCompat.PRIORITY_HIGH);
         } else {
             intent = new Intent(this, Activity3.class);
             intent.setAction(Intent.ACTION_MAIN);
             intent.addCategory(Intent.CATEGORY_LAUNCHER);
             intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // WAŻNE!
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             pendingIntent = PendingIntent.getActivity(
                     this, 1, intent,
                     PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
             );
             builder = new NotificationCompat.Builder(this, CHANNEL_ID_LOW)
-                    .setContentTitle("Low Priority")
+                    .setContentTitle("Niska priorytet")
                     .setContentText("Kliknij, aby przejść do Aktywności 3")
                     .setSmallIcon(android.R.drawable.ic_dialog_info)
                     .setContentIntent(pendingIntent)
-                    .setAutoCancel(true) // Usuwa powiadomienie po kliknięciu
+                    .setAutoCancel(true)
                     .setPriority(NotificationCompat.PRIORITY_LOW);
         }
 

@@ -14,12 +14,11 @@ public class Activity2 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity2);
 
-        // Obsługa przycisku "button3" – powrót do Activity1
         Button button3 = findViewById(R.id.button3);
         button3.setOnClickListener(v -> {
             Intent intent = new Intent(Activity2.this, Activity1.class);
             startActivity(intent);
-            finish(); // Zamykamy Activity2 po przejściu do Activity1
+            finish();
         });
     }
 }
