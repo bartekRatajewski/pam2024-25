@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="title">Gra w kości. Autor BR</string>
+    <string name="throw_dices">RZUĆ KOŚĆMI</string>
+    <string name="throw_score">Wynik tego losowania:</string>
+    <string name="game_score">Wynik gry:</string>
+    <string name="reset_score">RESETUJ WYNIK</string>
 </resources>
