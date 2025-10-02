@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">1.10.2025</string>
+    <string name="font_properties">Właściwości czcionki</string>
+    <string name="font_size">Rozmiar</string>
+    <string name="btn_text">>></string>
+    <string name="buenos">Buenos dias</string>
+    <string name="dzien">Dzień dobry</string>
+    <string name="morning">Good morning</string>
+</resources>
