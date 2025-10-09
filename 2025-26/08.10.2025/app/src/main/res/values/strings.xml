@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">notatki</string>
+    <string name="new_note">Nowy element</string>
+    <string name="add_note">Dodaj</string>
+</resources>
