@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title">Domek w górach</string>
+    <string name="like">POLUB</string>
+    <string name="dislike">USUŃ</string>
+    <string name="save">ZAPISZ</string>
+    <string name="description"><![CDATA[<b>Opis</b>\nOdwiedź komfortowy domek w Sudetach, blisko szlaków turystycznych.]]></string>
+</resources>
