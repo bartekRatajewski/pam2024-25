@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">weterynarz</string>
+    <string name="vet_visit">Wizyta u weterynarza</string>
+    <string name="fname_lname">Imię i nazwizsko właściciela</string>
+    <string name="species">Gatunek</string>
+    <string name="dog">Pies</string>
+    <string name="cat">Kot</string>
+    <string name="guinea_pig">Świnka morska</string>
+    <string name="age">Ile ma lat?</string>
+    <string name="purpose">Cel wizyty</string>
+    <string name="time">16:00</string>
+    <string name="ok">Ok</string>
+</resources>
