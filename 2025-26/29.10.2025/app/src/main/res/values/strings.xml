@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">29.10.2025</string>
+    <string name="input_value">Podaj wartość klucza</string>
+    <string name="input_text">Podaj tekst</string>
+    <string name="cypher">Zaszyfruj</string>
+    <string name="cyphered_text">Zaszyfrowany tekst</string>
+    <string name="save_cypher">Zapisz szyfr do pliku</string>
+    <string name="placeholder">szyfr...</string>
+</resources>
