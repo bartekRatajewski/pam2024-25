@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">rgb</string>
+    <string name="instruction">Dobierz kolor suwakami i zapisz przyciskiem</string>
+    <string name="download">Pobierz</string>
+</resources>
